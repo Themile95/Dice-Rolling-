@@ -1,17 +1,51 @@
-#calculator
+import random
 
-num_1 = int(input("Enter the first number: "))
-num_2 = int(input("Enter the second number: "))
-op = input("Enter the operator: ")
 
-#if_statement
+x = "y"
 
-if op == "+":
-    print(str("The answer is") (num_1 + num_2))
-if op == "-":
-    print(str("The answer is") (num_1 - num_2))
-if op == "/":
-    print(str("The answer is") (num_1 / num_2))
-if op == "*":
-    print(str("The answer is") (num_1 * num_2))
-
+while x == "y":
+	
+	# Generates a random number
+	# between 1 and 6 (including
+	# both 1 and 6)
+	no = random.randint(1,6)
+	
+	if no == 1:
+		print("[-----]")
+		print("[	 ]")
+		print("[ 0 ]")
+		print("[	 ]")
+		print("[-----]")
+	if no == 2:
+		print("[-----]")
+		print("[ 0 ]")
+		print("[	 ]")
+		print("[ 0 ]")
+		print("[-----]")
+	if no == 3:
+		print("[-----]")
+		print("[	 ]")
+		print("[0 0 0]")
+		print("[	 ]")
+		print("[-----]")
+	if no == 4:
+		print("[-----]")
+		print("[0 0]")
+		print("[	 ]")
+		print("[0 0]")
+		print("[-----]")
+	if no == 5:
+		print("[-----]")
+		print("[0 0]")
+		print("[ 0 ]")
+		print("[0 0]")
+		print("[-----]")
+	if no == 6:
+		print("[-----]")
+		print("[0 0 0]")
+		print("[	 ]")
+		print("[0 0 0]")
+		print("[-----]")
+		
+	x=input("press y to roll again and n to exit:")
+	print("\n")
